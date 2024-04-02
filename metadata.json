@@ -1,0 +1,10 @@
+{
+	"name": "Snowaroo",
+	"description": "A theme based on Q2A's classic 'Snow' theme, with enhancements exclusively tailored for dark mode",
+	"version": "1.0",
+	"date": "2023-08-17",
+	"author": "Margaret Casey Margout",
+	"author_uri": "https://github.com/MMargout",
+	"license": "CC0-1.0",
+	"min_q2a": "1.8"
+}
