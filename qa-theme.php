@@ -39,10 +39,10 @@ class qa_html_theme extends qa_html_theme_base
 			$this->output(
 				'<div class="qa-logged-in-avatar">',
 				QA_FINAL_EXTERNAL_USERS
-				? qa_get_external_avatar_html(qa_get_logged_in_userid(), 24, true)
+				? qa_get_external_avatar_html(qa_get_logged_in_userid(), 48, true)
 				: qa_get_user_avatar_html(qa_get_logged_in_flags(), qa_get_logged_in_email(), qa_get_logged_in_handle(),
 					qa_get_logged_in_user_field('avatarblobid'), qa_get_logged_in_user_field('avatarwidth'), qa_get_logged_in_user_field('avatarheight'),
-					24, true),
+					48, true),
 				'</div>'
 			);
 
