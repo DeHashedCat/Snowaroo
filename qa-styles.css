@@ -105,6 +105,7 @@ button::-moz-focus-inner {
 }
 
 form, fieldset {
+	word-break: break-word;
 	padding: 0;
 	margin: 0;
 	border: none;
@@ -113,7 +114,7 @@ form, fieldset {
 input[type="text"].qa-search-field {
 	padding: 8px;
 	background-color:transparent;
-	border-color:#2d2d2d;
+	border-color:#069;
 }
 
 input[type="text"], input[type="password"], textarea, select {
@@ -302,7 +303,7 @@ input[type="submit"].qa-search-button {
 	padding: 0;
 	text-indent: -9999px;
 	background: url(images/search.png) no-repeat center 0;
-	border: 1px solid #2d2d2d;
+	border: 1px solid #069;
 	display: inline-block;
 	border-radius: 0 3px 3px 0 !important;
 }
@@ -448,6 +449,7 @@ div.header-banner {
 	background: url(images/shadow.png) no-repeat center -10px;
 }*/
 .qa-main-wrapper {
+	min-width: 980px;
 	background: #121212;
 	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
 }
@@ -627,6 +629,7 @@ div.header-banner {
 /* Votes */
 .qa-q-item-stats {
 	float: left;
+	display: flex;
 }
 
 .qa-voting {
@@ -821,6 +824,7 @@ div.header-banner {
 .qa-a-count-selected {
 	background: #069;
 	border: 1px solid #069;
+	box-shadow: 0px 0px 14px 5px #069;
 }
 
 .qa-a-count-data {
@@ -966,6 +970,7 @@ div.header-banner {
 	padding: 20px;
 	background: transparent;
 	border: 1px solid #069;
+	box-shadow: 0px 0px 14px 2px #069;
 }
 
 .qa-feed {
@@ -1535,13 +1540,14 @@ div.header-banner {
 
 /* Question list */
 .qa-q-list-item {
-	height: 100px;
+	min-height: 100px;
 	zoom: 1;
 	padding: 5px;
 	margin-bottom: .5rem;
 	transition: all ease .3s;
 	border-radius: 8px;
 	border-bottom: 1px solid #2d2d2d;
+	display: flex;
 }
 
 .qa-q-list-item:hover {
@@ -1550,7 +1556,7 @@ div.header-banner {
 
 /* zoom for IE, padding for early FF */
 .qa-q-item-main {
-	width: 488px;
+	width: 75%;
 	float: left;
 	padding-left: 10px;
 }
@@ -1566,6 +1572,7 @@ div.header-banner {
 	font-weight: 700;
 	line-height: normal;
 	color: #c8c8c8;
+	word-break: break-word;
 }
 
 .qa-q-item-content {
@@ -1913,6 +1920,7 @@ a.qa-browse-cat-link:visited {
 	padding: 20px 10px;
 	border-bottom: 1px solid #2d2d2d;
 	min-height: 150px; /* prevent tick icon being hidden */
+	display: flex;
 }
 .qa-a-list-item:target {
 	-webkit-animation: highlight 2s ease-in-out;
@@ -2511,8 +2519,31 @@ a.qa-browse-cat-link:visited {
 	padding-left: 17px;
 }
 
-.osn-svg {
-	color: #fff;
+.osn-bell {
+	fill: #fff;
+}
+
+.sidebar-box{
+	font-size: 14px/1.5;
+}
+
+.sidebar-box-warning {
+	color: red;
+}
+
+.top-page-mirrors {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0 .5rem;
+}
+
+.qa-q-list-item-featured {
+    border-radius: 8px;
+}
+
+.qa-q-list-item-featured:hover {
+    background-color: #1b4f72;
 }
 
 /* IE6 friendly versions of icons with binary alpha channel */
